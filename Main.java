@@ -1,6 +1,8 @@
+import java.util.Scanner; 
+
 /**
  *
- * @author 
+ * @author Neil Fischer
  */
 public class Main {
 
@@ -9,7 +11,23 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // Create scanner for user input 
+    Scanner input = new Scanner(System.in); 
+    //prompt the user to enter in a integer 
+    System.out.println("Please enter an integer to count down to"); 
+
+    int userNum = input.nextInt(); 
+    int count = 1;
+    // the accmulator to add the count into 
+    int total = 0; 
+
+    while(count <= userNum){ 
+     total = total + count;  
+     count = count + 1;
+
+    } 
+    System.out.println("The sum from 1 - " + userNum + " is " + total);
+    
     
   }
 }
