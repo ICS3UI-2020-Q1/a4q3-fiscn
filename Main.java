@@ -1,7 +1,7 @@
 import java.util.Scanner; 
 
 /**
- *
+ * Write a program that will prompt the user to enter in a positive integer. It will then calculate the sum from 1 up to that number.
  * @author Neil Fischer
  */
 public class Main {
